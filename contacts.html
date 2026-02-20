@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trusted Contacts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="center-box">
+  <h2>👩‍👧 Trusted Contacts</h2>
+
+  <input id="name" placeholder="Enter Name" class="contact-input">
+  <input id="phone" placeholder="Enter Phone Number" class="contact-input">
+
+  <button onclick="saveContact()" class="btn">Save Contact</button>
+
+  <h3>Saved Contacts:</h3>
+  <ul id="contactList"></ul>
+
+  <a href="index.html" class="btn">⬅ Back to Home</a>
+</div>
+
+<script src="script.js"></script>
+<script>
+  loadContacts(); // Show saved contacts when page opens
+</script>
+
+</body>
+</html>

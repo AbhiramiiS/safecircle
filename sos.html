@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🚨 Emergency SOS</h2>
+  <button onclick="sendSOS()" class="sos-btn">SEND SOS</button>
+  <button onclick="startVoiceSOS()">🎙 Voice SOS</button>
+<p id="voiceStatus"></p>
+
+  <p id="location"></p>
+  <iframe id="map" width="100%" height="300"></iframe>
+
+  <h3>📞 Fake Call</h3>
+  <button onclick="fakeCall()" class="btn">Incoming Call</button>
+  <button onclick="sendSOS()">SEND SOS</button>
+
+<!-- ADD HERE 👇 -->
+<button onclick="startVoiceSOS()">🎙 Voice SOS</button>
+<p id="voiceStatus"></p>
+<!-- END HERE -->
+
+<p id="location"></p>
+
+  <audio id="ringtone" src="assets/ringtone.mp3"></audio>
+
+  <h3>🚓 Nearby Police Stations</h3>
+  <iframe
+    width="100%"
+    height="300"
+    src="https://www.google.com/maps?q=police+station+near+me&output=embed">
+  </iframe>
+
+  <script src="script.js"></script>
+</body>
+</html>

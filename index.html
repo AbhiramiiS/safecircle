@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SafeCircle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="center-box">
+
+  <h1>SafeCircle</h1>
+  <p>Your personal safety companion</p>
+
+  <div class="trusted-box">
+    <a href="contacts.html">Trusted Contacts</a>
+  </div>
+
+  <button class="sos-btn" onclick="sendSOS()">SOS</button>
+
+<p id="location"></p>
+
+<iframe id="map" width="300" height="200" style="border-radius:15px;"></iframe>
+
+<button onclick="fakeCall()">Fake Call</button>
+<button onclick="startVoiceSOS()">Voice SOS</button>
+
+<p id="voiceStatus"></p>
+
+<audio id="ringtone" src="ringtone.mp3"></audio>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
