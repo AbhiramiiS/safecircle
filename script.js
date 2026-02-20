@@ -25,10 +25,12 @@ window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`);
 // FAKE CALL FEATURE
 function fakeCall() {
   let ringtone = document.getElementById("ringtone");
-  ringtone.play();
+  ringtone.currentTime = 0; // restart sound
+  ringtone.loop = true;     // keep ringing
+  ringtone.play().catch(e => console.log("Audio blocked"));
+
   alert("📞 Incoming Call from Mom ❤️");
 }
-
 // SAVE CONTACTS
 function saveContact() {
   let name = document.getElementById("name").value;
