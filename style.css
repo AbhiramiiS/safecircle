@@ -42,6 +42,20 @@ body {
   animation: pulse 1.3s infinite;
 }
 
+.fake-call {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+/* Voice SOS Button */
+.voice-sos {
+  background: linear-gradient(45deg, #1d976c, #93f9b9);
+}
+
+/* Hover Effect */
+.sos-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
 /* Hover Zoom */
 .sos-btn:hover {
   transform: scale(1.15);
@@ -71,4 +85,33 @@ body {
   border-radius: 10px;
   list-style: none;
   font-weight: bold;
+}
+/* Big Action Buttons */
+.action-btn {
+  padding: 18px 50px;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+/* Fake Call Button Style */
+.fake-call {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+/* Voice SOS Button Style */
+.voice-sos {
+  background: linear-gradient(45deg, #1d976c, #00b09b);
+}
+
+/* Hover Effect */
+.action-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
